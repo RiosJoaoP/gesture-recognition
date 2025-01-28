@@ -83,18 +83,3 @@ class DataFrameVideoSequence(Sequence):
             frames.append(img_array)
 
         return np.stack(frames, axis=0)
-
-# Exemplo de uso:
-# dataframe = pd.read_csv("videos.csv")
-# sequence = DataFrameVideoSequence(
-#     dataframe=dataframe,
-#     directory="/path/to/videos",
-#     x_col="filenames",
-#     y_col="class",
-#     target_size=(224, 224),
-#     nb_frames=16,
-#     batch_size=8,
-#     shuffle=True
-# )
-
-# model.fit(sequence, epochs=10)
