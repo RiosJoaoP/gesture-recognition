@@ -1,0 +1,20 @@
+[project]
+name = "gesture-recognition"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.10.*"
+dependencies = [
+    "keras>=3.8.0",
+    "keras-preprocessing>=1.1.2",
+    "numpy>=1.26.0,<2.0.0",
+    "opencv-python>=4.11.0.86",
+    "pandas>=2.2.3",
+    "pyautogui>=0.9.54",
+    "scipy>=1.15.1",
+    "six>=1.17.0",
+    "tensorflow>=2.10.0",
+    "torch>=2.5.1",
+    "torchvision>=0.20.1",
+    "tqdm>=4.67.1",
+]
