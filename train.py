@@ -60,8 +60,8 @@ def train(args):
     lr_schedule = ExponentialDecay(
 		initial_learning_rate=0.005,
 		decay_steps=5000,
-		decay_rate=0.96,  # Taxa de decaimento (ajuste conforme necessário)
-		staircase=True  # Use True para decaimento em degraus
+		decay_rate=0.96,
+		staircase=True 
 	)
 
     optimizer = SGD(learning_rate=lr_schedule, momentum=0.99, nesterov=True)
