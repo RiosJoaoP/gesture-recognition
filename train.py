@@ -47,8 +47,6 @@ def train(args):
 
     inp_shape = (16, 64, 96, 3,)
 
-    net = Resnet3DBuilder.build_resnet_101(inp_shape, nb_classes, drop_rate=0.5)
-
     data = DataLoader(vid_path, labels_path, train_path, val_path)
 
     mkdirs(model_path, 0o755)
